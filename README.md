@@ -59,8 +59,9 @@ module.exports = function (eleventyConfig) {
 > [!IMPORTANT]
 > This plugin relies on specific HTML comments to process images. If these comments are removed or altered by minification before this plugin runs, it will cause errors. To prevent this, make sure to add any HTML minification plugins _after_ this plugin in your Eleventy configuration file. This ensures that image processing occurs before any minification takes place.
 
+
 > [!CAUTION]
-> `eleventy.js` only accepts one `module.exports` object. Make sure you paste the plugin snippet above **inside** the current `module.exports` object.
+> `eleventy.js` only accepts one `module.exports`. Make sure you paste the plugin snippet above **inside** the current `module.exports`.
 
 3. For caching (Netlify use only), install Netlify's caching plugin:
 
